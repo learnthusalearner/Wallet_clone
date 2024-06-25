@@ -46,5 +46,6 @@ Router.post("/transfer",authMiddleware,async (req,res) =>{//auth verifies that i
     });
 })
 
+module.exports=Router;
 
 

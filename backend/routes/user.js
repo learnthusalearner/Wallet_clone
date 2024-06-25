@@ -9,8 +9,8 @@ const Router = express.Router();
 const SignupSchema = zod.object({
     username: zod.string().email(),
     password: zod.string(),
-    Firstname: zod.string(),
-    Lastname: zod.string()
+    firstname: zod.string(),
+    lastname: zod.string()
 })
 
 Router.post("/signup",async (req,res) =>{
